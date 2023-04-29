@@ -1,5 +1,6 @@
 # VSCode PDF Template
 ## Template for projects under Visual Studio Code.
+---
 
 <div class="page"/>
 
@@ -15,6 +16,8 @@
   - [2.1. Table of content:](#21-table-of-content)
   - [2.2. Courrier Expéditeur:](#22-courrier-expéditeur)
   - [2.3. Factures et Devis:](#23-factures-et-devis)
+  - [2.3. Documents:](#23-documents)
+    - [Information du document:](#information-du-document)
 
 <div class="page"/>
 
@@ -61,6 +64,8 @@ Ce projet permet de générer à partir d'un markdown un PDF avec un template su
   - [2.1. Table of content:](#21-table-of-content)
   - [2.2. Courrier Expéditeur:](#22-courrier-expéditeur)
   - [2.3. Factures et Devis:](#23-factures-et-devis)
+  - [2.3. Documents:](#23-documents)
+    - [Information du document:](#information-du-document)
 
 <div class="page"/>
 
@@ -152,8 +157,8 @@ PAYS...
 
 En cas de retard de paiement, une pénalité de 3 fois le taux d'intérêt légal sera appliqué à laquelle s'ajoutera une indemnité forfaitaire pour frais de recouvrement de 40€.
 **Virement à effectuer sur le compte:**
-**IBAN: *LT69 3250 0455 4751 7580***
-**BIC: *REVOLT21***
+**IBAN: *XXXX XXXX XXXX XXXX***
+**BIC: *MA BANQUE***
 ```
 
 ```markdown
@@ -164,8 +169,9 @@ En cas de retard de paiement, une pénalité de 3 fois le taux d'intérêt léga
 |    Montant TVA | 13000€ |
 |      TOTAL TTC | 78000€ |
 | Durée (Ouvrés) |  135 J |
-```
 
+
+```
 
 **Résultat:**
 
@@ -190,8 +196,8 @@ En cas de retard de paiement, une pénalité de 3 fois le taux d'intérêt léga
 
 En cas de retard de paiement, une pénalité de 3 fois le taux d'intérêt légal sera appliqué à laquelle s'ajoutera une indemnité forfaitaire pour frais de recouvrement de 40€.
 **Virement à effectuer sur le compte:**
-**IBAN: *LT69 3250 0455 4751 7580***
-**BIC: *REVOLT21***
+**IBAN: *XXXX XXXX XXXX XXXX***
+**BIC: *MA BANQUE***
 
 <div class="facture-total" />
 
@@ -200,4 +206,62 @@ En cas de retard de paiement, une pénalité de 3 fois le taux d'intérêt léga
 |    Montant TVA | 13000€ |
 |      TOTAL TTC | 78000€ |
 | Durée (Ouvrés) |  135 J |
+
+
+
+<div class="page" />
+
+<!-- Documents ========================= -->
+#### 2.3. Documents:
+
+##### Information du document:
+###### Statut d'avancement:
+
+```markdown
+<div class="document-status" />
+
+| DOCUMENT STATUS: | IN PROGRESS |
+| :--------------- | :---------- |
+```
+###### Résumé du document:
+
+```markdown
+<div class="document-resume" />
+
+***RESUME:***
+Voici le résumé de mon histoire ça peut être court comme long et c'est tant mieux.
+```
+###### Validation du document:
+
+```markdown
+<div class="document-validation" />
+
+| VALIDATION CIRCUIT | NAME  | FUNCTION | SIGNATURE and DATE |
+| :----------------- | :---: | :------: | :----------------: |
+| WRITTEN BY:        |       |          |                    |
+| APPROUVED BY:      |       |          |                    |
+| CLIENT APPROVAL:   |       |          |                    |
+```
+
+**Résultat:**
+
+<div class="document-status" />
+
+| DOCUMENT STATUS: | IN PROGRESS |
+| :--------------- | :---------- |
+
+
+<div class="document-resume" />
+
+***RESUME:***
+Voici le résumé de mon histoire ça peut être court comme long et c'est tant mieux.
+
+
+<div class="document-validation" />
+
+| VALIDATION CIRCUIT | NAME  | FUNCTION | SIGNATURE and DATE |
+| :----------------- | :---: | :------: | :----------------: |
+| WRITTEN BY:        |       |          |                    |
+| APPROUVED BY:      |       |          |                    |
+| CLIENT APPROVAL:   |       |          |                    |
 

@@ -8,9 +8,9 @@ body {
 h1 {
     font-weight: normal;
     font-size: 30pt;
-	padding: 0;
-	line-height: 0;
-	border: 0;
+    padding: 0;
+    line-height: 0;
+    border: 0;
     margin-top: 50%;
     text-align: left;
 }
@@ -81,17 +81,17 @@ table * {
 table th {
     font-style: normal;
     width: auto;
-    
+
 }
 
 table td {
     font-weight: lighter;
-    width: auto;    
+    width: auto;
 }
 
 /* ================================================= */
 /* TABLE OF CONTENT */
-div.table-of-content + ul {
+div.table-of-content+ul {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -101,17 +101,17 @@ div.table-of-content + ul {
     font-size: 14pt;
 }
 
-div.table-of-content + ul * {
+div.table-of-content+ul * {
     list-style: none;
     font-style: italic;
 }
 
-div.table-of-content + ul a {
+div.table-of-content+ul a {
     color: black;
 }
 
 
-div.table-of-content + h2 {
+div.table-of-content+h2 {
     font-size: 16pt;
     font-style: normal;
     font-weight: normal;
@@ -121,7 +121,7 @@ div.table-of-content + h2 {
 /* ================================================= */
 /* COURIER */
 /* Expediteur */
-div.courrier-expediteur + p {
+div.courrier-expediteur+p {
     float: left;
     text-align: left;
     border-left: 2px solid gray;
@@ -131,7 +131,7 @@ div.courrier-expediteur + p {
 }
 
 /* Destinataire */
-div.courrier-destinataire + p {
+div.courrier-destinataire+p {
     float: right;
     text-align: right;
     border-right: 2px solid gray;
@@ -142,7 +142,7 @@ div.courrier-destinataire + p {
 }
 
 /* Objet */
-div.courrier-objet + p {
+div.courrier-objet+p {
     clear: both;
     text-align: left;
     border-bottom: 0px solid gray;
@@ -153,7 +153,7 @@ div.courrier-objet + p {
 /* ================================================= */
 /* FACTURE & DEVIS */
 /* Validité */
-div.facture-validite + table {
+div.facture-validite+table {
     margin: 0;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -165,7 +165,7 @@ div.facture-validite + table {
     margin-bottom: 5px;
 }
 
-div.facture-validite + table * {
+div.facture-validite+table * {
     margin: 0;
     padding: 0;
     border: 0px solid gray;
@@ -175,31 +175,31 @@ div.facture-validite + table * {
 }
 
 /* Content */
-div.facture-content + table {
+div.facture-content+table {
     margin-top: 1em;
 }
 
-div.facture-content + table td:first-child {
+div.facture-content+table td:first-child {
     width: 17%;
     font-size: 10pt;
 
 }
 
-div.facture-content + table td:nth-child(2) {
+div.facture-content+table td:nth-child(2) {
     font-size: 9pt;
 }
 
-div.facture-content + table td:nth-child(3) {
+div.facture-content+table td:nth-child(3) {
     width: 10%;
 }
 
-div.facture-content + table td:last-child {
+div.facture-content+table td:last-child {
     width: 15%;
 }
 
 
 /* Signature */
-div.facture-conditions + p {
+div.facture-conditions+p {
     float: left;
     margin: 0;
     margin-top: 2em;
@@ -208,7 +208,7 @@ div.facture-conditions + p {
 }
 
 
-div.facture-total + table {
+div.facture-total+table {
     float: right;
     margin: 0;
     border: none;
@@ -216,111 +216,116 @@ div.facture-total + table {
     margin-top: 2em;
     width: inherit;
     height: fit-content;
-
 }
 
 
-div.facture-total + table * {
+div.facture-total+table * {
     border: none;
     font-weight: normal;
     height: fit-content;
 }
 
-div.facture-total + table tbody {
+div.facture-total+table tbody {
     margin: 0;
 }
 
-/*DOCUMENT STATUS STYLE */
-/* 
+
+/*DOCUMENT*/
+
+/* Status */
+
 div.document-status {
-    width: inherit;
-    padding: 0;
-    border-bottom: 1px solid gray ;
-    border-right: 1px solid gray ;
-    margin-bottom: 15%;
-    margin-top: 15%;
+    clear: both;
+    width: 100%;
+    border: 0px solid gray;
+    margin-top: 2em;
 }
-ul.document-status {
-    display: inline-block;
+
+div.document-status+table {
     width: 100%;
     margin: 0;
     padding: 0;
+    border: 0px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    padding-bottom: 2%;
 }
 
-li.document-status-title {
-    float: left;
+div.document-status+table * {
+    border: 0px solid gray;
+    margin: 0;
+    padding: 0;
+}
+
+div.document-status+table th {
+    border: 0px solid gray;
     margin: 0;
     padding: 0;
     padding-left: 5%;
-    list-style: none;
-
-    
+    margin-bottom: 3px;
 }
 
-li.document-status-value {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+div.document-status+table th:first-child {
+    border: 0px solid gray;
+    width: 75%;
+}
+
+div.document-status+table th:last-child {
+    border: 0px solid gray;
     font-style: italic;
-    float: right;
-    padding-left: 5%;
     padding-right: 2%;
     border-left: 1px solid gray;
-} */
-
-/*DOCUMENT RESUME STYLE */
-
-/* div.document-resume {
-    margin-top: 15%;
-    margin-bottom: 15%;
-    display: block;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray ;
-    width: inherit;
-    
 }
 
-div.document-resume-title {
-    text-decoration: underline;
+/*RESUME STYLE */
+div.document-resume {
+    clear: both;
+    width: 100%;
+    margin-top: 5em;
+}
+
+div.document-resume+p {
+    padding: 0;
+    margin: 0;
+    border: 0px solid gray;
+    width: inherit;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    padding-top: 1em;
+    padding-bottom: 1em;
     padding-left: 5%;
 }
-
-p.document-resume-content {
-    padding-bottom: 3px;
-} */
-
-
-/* TABLE */
-/* table {
-    width: 100%;
-    border: 1px solid gray;
-    font-size: 12;
-    vertical-align: top;
-    font-weight: normal;
-}
-
-table * {
-    width: 100%;
-    border: 1px solid gray;
-    font-size: 12;
-    vertical-align: top;
-    font-weight: normal;
-}
-
-table th {
-    font-style: normal;
-    width: auto;
-    
-}
-
-table td {
-    font-weight: lighter;
-    width: auto;    
-}
-*/
 
 
 /* VALIDATION TABLE */
+div.document-validation {
+    clear: both;
+    width: 100%;
+    margin-top: 5em;
+}
+
+div.document-validation+table th {
+    font-style: italic;
+    text-align: right;
+}
+
+div.document-validation+table th:first-child {
+    font-style: normal;
+    font-size: 16;
+}
+
+div.document-validation+table td {
+    width: 25%;
+    height: 4em;
+    font-weight: lighter;
+}
+
+div.document-validation+table td:first-child {
+    font-style: normal;
+}
+
+
+
 /* table.validation-circuit th.top-left {
     font-style: normal;
     font-size: 16;
@@ -344,29 +349,6 @@ table.validation-circuit td {
 }
  */
 
-/* Table of content */
-
-/* 
-div.table-of-content + ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border-left: 1px solid gray;
-    padding-left: 1em;
-    font-style: normal;
-
-}
-
-div.table-of-content + ul * {
-    list-style: none;
-    font-style: italic;
-
-}
-
-
-div.table-of-content + ul a {
-    color: black;
-} */
 
 
 /* REF & DELAIS LEGAUX */
