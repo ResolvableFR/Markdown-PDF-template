@@ -87,6 +87,25 @@ table th {
 table td {
     font-weight: lighter;
     width: auto;
+    height: 2em;
+}
+
+pre  {
+    background-color: #FFF;
+	border: 0px solid #cccccc;
+	border-radius: 0px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre.hljs {
+    background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
 }
 
 /* ================================================= */
@@ -323,99 +342,3 @@ div.document-validation+table td {
 div.document-validation+table td:first-child {
     font-style: normal;
 }
-
-
-
-/* table.validation-circuit th.top-left {
-    font-style: normal;
-    font-size: 16;
-
-}
-
-table.validation-circuit th.top {
-    font-style: italic;
-    text-align: right;
-}
-
-
-table.validation-circuit th.left {
-    font-style: normal;
-}
-
-table.validation-circuit td {
-    width: 25%;
-    height: 4em;
-    font-weight: lighter;
-}
- */
-
-
-
-/* REF & DELAIS LEGAUX */
-/* div.references + p {
-    margin: 0;
-    flex: 1 1 100%;
-}
-
-div.references + table {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    border: 0px solid gray;
-    font-size: 12;
-    vertical-align: top;
-    font-weight: normal;
-    margin-bottom: 5px;
-}
-
-div.references + table * {
-    margin: 0;
-    padding: 0;
-    border: 0px solid gray;
-    font-size: 12;
-    vertical-align: top;
-    font-weight: normal;
-}
- */
-
-
-/* TABLE de ACTIVITES */
-/* div.table-activites + p {
-    margin: 0;
-    flex: 1 1 100%;
-}
- */
-
-
-/* Signatures et conditions */
-/* span.signature-conditions + p {
-    margin: 0;
-    flex: 2 1;
-    margin-top: 2em;
-    margin-right: 3em;
-    width: 50%;
-}
-
-
-span.table-total + table {
-    margin: 0;
-    flex: 1 1;
-    border: none;
-    text-align: center;
-    margin-top: 2em;
-    margin-left: 3em;
-    width: inherit;
-    height: fit-content;
-
-}
-
-
-span.table-total + table * {
-    border: none;
-    font-weight: normal;
-    height: fit-content;
-}
-
-span.table-total + table tbody {
-    margin: 0;
-} */
