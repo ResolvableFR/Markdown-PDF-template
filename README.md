@@ -1,6 +1,57 @@
-# VSCode PDF Template
-## Template for projects under Visual Studio Code.
+# Markdown to PDF
+## Exemples de mise en formes et leurs contenu
 ---
+
+<div class="page"/>
+
+<!-- Documents ========================= -->
+### 1. Exemple page de relecture:
+
+
+<div class="document-status" />
+
+| DOCUMENT STATUS: | IN PROGRESS |
+| :--------------- | :---------- |
+
+<div class="document-resume" />
+
+***RESUME:***
+Voici le résumé de mon histoire ça peut être court comme long et c'est tant mieux.
+
+<div class="document-validation" />
+
+| VALIDATION CIRCUIT | NAME  | FUNCTION | SIGNATURE and DATE |
+| :----------------- | :---: | :------: | :----------------: |
+| WRITTEN BY:        |       |          |                    |
+| APPROUVED BY:      |       |          |                    |
+| CLIENT APPROVAL:   |       |          |                    |
+
+<div class="page"/>
+
+
+```markdown
+<div class="document-status" />
+
+| DOCUMENT STATUS: | IN PROGRESS |
+| :--------------- | :---------- |
+```
+
+```markdown
+<div class="document-resume" />
+
+***RESUME:***
+Voici le résumé de mon histoire ça peut être court comme long et c'est tant mieux.
+```
+
+```markdown
+<div class="document-validation" />
+
+| VALIDATION CIRCUIT | NAME  | FUNCTION | SIGNATURE and DATE |
+| :----------------- | :---: | :------: | :----------------: |
+| WRITTEN BY:        |       |          |                    |
+| APPROUVED BY:      |       |          |                    |
+| CLIENT APPROVAL:   |       |          |                    |
+```
 
 <div class="page"/>
 
@@ -11,30 +62,11 @@
 
 <div class="table-of-content"/>
 
-- [1. Introduction:](#1-introduction)
-- [2. Resolvable marqueurs:](#2-resolvable-marqueurs)
-  - [2.1. Table of content:](#21-table-of-content)
-  - [2.2. Courrier Expéditeur:](#22-courrier-expéditeur)
-  - [2.3. Factures et Devis:](#23-factures-et-devis)
-  - [2.3. Documents:](#23-documents)
-    - [Information du document:](#information-du-document)
+- [1. Exemple page de relecture:](#1-exemple-page-de-relecture)
+- [2. Contenu d'un document:](#2-contenu-dun-document)
+  - [2.1. Chapitre niveau 2](#21-chapitre-niveau-2)
+    - [2.1.1. Chapitre niveau 3](#211-chapitre-niveau-3)
 
-<div class="page"/>
-
-### 1. Introduction:
-
-Ce projet permet de générer à partir d'un markdown un PDF avec un template sur mesure correspondant aux exigences de l'entreprise.
-
-<div class="page"/>
-
-
-
-
-
-### 2. Resolvable marqueurs:
-
-<!-- Table des matières ========================= -->
-#### 2.1. Table of content:
 
 ```markdown
 <div class="table-of-content"/>
@@ -43,225 +75,169 @@ Ce projet permet de générer à partir d'un markdown un PDF avec un template su
 
 <div class="table-of-content"/>
 
-- [1. Introduction:](#1-introduction)
-- [3. Resolvable marqueurs:](#3-resolvable-marqueurs)
-  - [2. Table of content:](#2-table-of-content)
-  - [3.1. Courrier Expéditeur:](#31-courrier-expéditeur)
-  - [3.2. Factures et Devis:](#32-factures-et-devis)
+- [1. Exemple page de relecture:](#1-exemple-page-de-relecture)
+- [2. Contenu d'un document:](#2-contenu-dun-document)
+  - [2.1. Chapitre niveau 2](#21-chapitre-niveau-2)
+    - [2.1.1. Chapitre niveau 3](#211-chapitre-niveau-3)
+- [3. Exemple de Courrier \& Factures:](#3-exemple-de-courrier--factures)
 
 ```
-
-**Résultat:**
-
-<div class="table-of-content"/>
-
-## Table of content:
-
-<div class="table-of-content"/>
-
-- [1. Introduction:](#1-introduction)
-- [2. Resolvable marqueurs:](#2-resolvable-marqueurs)
-  - [2.1. Table of content:](#21-table-of-content)
-  - [2.2. Courrier Expéditeur:](#22-courrier-expéditeur)
-  - [2.3. Factures et Devis:](#23-factures-et-devis)
-  - [2.3. Documents:](#23-documents)
-    - [Information du document:](#information-du-document)
 
 <div class="page"/>
 
+### 2. Contenu d'un document:
+
+#### 2.1. Chapitre niveau 2
+
+##### 2.1.1. Chapitre niveau 3
+
+***Contenu:***
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
 
-
-
-<!-- Courriers, Lettres ========================= -->
-
-#### 2.2. Courrier Expéditeur:
-
-```markdown
-<div class="courrier-expediteur" />
-
-**SAS RESOLVABLE**
-Adresse...
-CODE Postal + Ville...
-FRANCE
+```mermaid
+pie title Temps Rédaction documentaire
+         "Contenu" : 99
+         "Mise en Page" : 1
 ```
-
-```markdown
-<div class="courrier-destinataire" />
-
-**Client...**
-Adresse...
-CODE Postal + Ville...
-PAYS...
-```
-
-```markdown
-<div class="courrier-objet" />
-
-***Objet du courrier***
-*Complément...*
-```
-
-**Résultat:**
-
-<div class="courrier-expediteur" />
-
-**SAS RESOLVABLE**
-Adresse...
-CODE Postal + Ville...
-FRANCE
-
-<div class="courrier-destinataire" />
-
-**Client...**
-Adresse...
-CODE Postal + Ville...
-PAYS...
-
-<div class="courrier-objet" />
-
-***Objet du courrier***
-*Complément...*
-
-<div class="page"/>
-
-
-
-
-<!-- Factures et devis ========================= -->
-#### 2.3. Factures et Devis:
-
-```markdown
-<div class="facture-validite" />
-
-| Date d'émission : JJ/MM/AAAA | Validité: *30 jours* |
-| :--------------------------- | -------------------: |
-```
-
-```markdown
-<div class="facture-content" />
-
-| REF: | DESIGNATION |  TVA | PRIX HT |
-| :--- | :---------- | ---: | ------: |
-| REF: | DESIGNATION |  20% |    620€ |
-| REF: | DESIGNATION |  20% |    620€ |
-| REF: | DESIGNATION |  20% |    620€ |
-| REF: | DESIGNATION |  20% |    620€ |
-| REF: | DESIGNATION |  20% |    620€ |
-| REF: | DESIGNATION |  20% |    620€ |
-```
-
-
-```markdown
-<div class="facture-conditions" />
-
-En cas de retard de paiement, une pénalité de 3 fois le taux d'intérêt légal sera appliqué à laquelle s'ajoutera une indemnité forfaitaire pour frais de recouvrement de 40€.
-**Virement à effectuer sur le compte:**
-**IBAN: *XXXX XXXX XXXX XXXX***
-**BIC: *MA BANQUE***
-```
-
-```markdown
-<div class="facture-total" />
-
-|       TOTAL HT | 65000€ |
-| -------------: | -----: |
-|    Montant TVA | 13000€ |
-|      TOTAL TTC | 78000€ |
-| Durée (Ouvrés) |  135 J |
-
-
-```
-
-**Résultat:**
-
-<div class="facture-validite" />
-
-| Date d'émission : JJ/MM/AAAA | Validité: *30 jours* |
-| :--------------------------- | -------------------: |
-
-<div class="facture-content" />
-
-| REF: | DESIGNATION |  TVA | PRIX HT |
-| :--- | :---------- | ---: | ------: |
-| REF: | DESIGNATION |  20% |    620€ |
-| REF: | DESIGNATION |  20% |    620€ |
-| REF: | DESIGNATION |  20% |    620€ |
-| REF: | DESIGNATION |  20% |    620€ |
-| REF: | DESIGNATION |  20% |    620€ |
-| REF: | DESIGNATION |  20% |    620€ |
-
-
-<div class="facture-conditions" />
-
-En cas de retard de paiement, une pénalité de 3 fois le taux d'intérêt légal sera appliqué à laquelle s'ajoutera une indemnité forfaitaire pour frais de recouvrement de 40€.
-**Virement à effectuer sur le compte:**
-**IBAN: *XXXX XXXX XXXX XXXX***
-**BIC: *MA BANQUE***
-
-<div class="facture-total" />
-
-|       TOTAL HT | 65000€ |
-| -------------: | -----: |
-|    Montant TVA | 13000€ |
-|      TOTAL TTC | 78000€ |
-| Durée (Ouvrés) |  135 J |
 
 
 
 <div class="page" />
 
-<!-- Documents ========================= -->
-#### 2.3. Documents:
-
-##### Information du document:
-###### Statut d'avancement:
-
 ```markdown
-<div class="document-status" />
+### 2. Contenu d'un document:
 
-| DOCUMENT STATUS: | IN PROGRESS |
-| :--------------- | :---------- |
-```
-###### Résumé du document:
+#### 2.1. Chapitre niveau 2
 
-```markdown
-<div class="document-resume" />
+##### 2.1.1. Chapitre niveau 3
 
-***RESUME:***
-Voici le résumé de mon histoire ça peut être court comme long et c'est tant mieux.
-```
-###### Validation du document:
+***Contenu:***
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-```markdown
-<div class="document-validation" />
-
-| VALIDATION CIRCUIT | NAME  | FUNCTION | SIGNATURE and DATE |
-| :----------------- | :---: | :------: | :----------------: |
-| WRITTEN BY:        |       |          |                    |
-| APPROUVED BY:      |       |          |                    |
-| CLIENT APPROVAL:   |       |          |                    |
 ```
 
-**Résultat:**
+<pre class="hljs"><code><div>```mermaid
+pie title Temps Rédaction documentaire
+        "Contenu" : 99
+        "Mise en Page" : 1
+```
+</div></code></pre>
 
-<div class="document-status" />
-
-| DOCUMENT STATUS: | IN PROGRESS |
-| :--------------- | :---------- |
-
-
-<div class="document-resume" />
-
-***RESUME:***
-Voici le résumé de mon histoire ça peut être court comme long et c'est tant mieux.
+<div class="page" />
 
 
-<div class="document-validation" />
+<!-- Courriers, Lettres ========================= -->
 
-| VALIDATION CIRCUIT | NAME  | FUNCTION | SIGNATURE and DATE |
-| :----------------- | :---: | :------: | :----------------: |
-| WRITTEN BY:        |       |          |                    |
-| APPROUVED BY:      |       |          |                    |
-| CLIENT APPROVAL:   |       |          |                    |
+### 3. Exemple de Courrier & Factures:
+
+<div class="courrier-expediteur" />
+
+**SAS RESOLVABLE**
+Adresse...
+CODE Postal + Ville...
+FRANCE
+
+<div class="courrier-destinataire" />
+
+**Client...**
+Adresse...
+CODE Postal + Ville...
+PAYS...
+
+<div class="courrier-objet" />
+
+***Objet du courrier***
+*Complément...*
+
+
+<div class="facture-validite" />
+
+| Date d'émission : JJ/MM/AAAA | Validité: *30 jours* |
+| :--------------------------- | -------------------: |
+
+<div class="facture-content" />
+
+| REF: | DESIGNATION |  TVA | PRIX HT |
+| :--- | :---------- | ---: | ------: |
+| REF: | DESIGNATION |  20% |      0€ |
+| REF: | DESIGNATION |  20% |      0€ |
+
+<div class="facture-conditions" />
+
+En cas de retard de paiement, une pénalité de 3 fois le taux d'intérêt légal sera appliqué à laquelle s'ajoutera une indemnité forfaitaire pour frais de recouvrement de 40€.
+**Virement à effectuer sur le compte:**
+**IBAN: *XXXX XXXX XXXX XXXX***
+**BIC: *MA BANQUE***
+
+<div class="facture-total" />
+
+|       TOTAL HT |    0€ |
+| -------------: | ----: |
+|    Montant TVA |    0€ |
+|      TOTAL TTC |    0€ |
+| Durée (Ouvrés) | 365 J |
+
+
+<div class="page"/>
+
+
+```markdown
+<div class="courrier-expediteur" />
+
+**SAS RESOLVABLE**
+Adresse...
+CODE Postal + Ville...
+FRANCE
+```
+
+```markdown
+<div class="courrier-destinataire" />
+
+**Client...**
+Adresse...
+CODE Postal + Ville...
+PAYS...
+```
+
+```markdown
+<div class="courrier-objet" />
+
+***Objet du courrier***
+*Complément...*
+```
+
+```markdown
+<div class="facture-validite" />
+
+| Date d'émission : JJ/MM/AAAA | Validité: *30 jours* |
+| :--------------------------- | -------------------: |
+
+<div class="facture-content" />
+
+| REF: | DESIGNATION |  TVA | PRIX HT |
+| :--- | :---------- | ---: | ------: |
+| REF: | DESIGNATION |  20% |      0€ |
+| REF: | DESIGNATION |  20% |      0€ |
+```
+
+<div class="page"/>
+
+```markdown
+<div class="facture-conditions" />
+
+En cas de retard de paiement, une pénalité de 3 fois le taux d'intérêt légal sera appliqué à laquelle s'ajoutera une indemnité forfaitaire pour frais de recouvrement de 40€.
+**Virement à effectuer sur le compte:**
+**IBAN: *XXXX XXXX XXXX XXXX***
+**BIC: *MA BANQUE***
+
+<div class="facture-total" />
+
+|       TOTAL HT |    0€ |
+| -------------: | ----: |
+|    Montant TVA |    0€ |
+|      TOTAL TTC |    0€ |
+| Durée (Ouvrés) | 365 J |
+```
+
 
